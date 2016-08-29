@@ -4533,5 +4533,6 @@ body#tinymce {
 
 .gallery {
   background-color: #e6e6e6;
-  background-image: url("../images/demo/hero-bg-foundation-6-small.svg") bottom center;
-  background-repeat: repeat; }
+  background-image: url("images/noise.png");
+  background-repeat: repeat;
+  background-position: center center; }
