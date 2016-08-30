@@ -1,6 +1,7 @@
-.gallery {
+.kaneohe-gallery {
 	background-color: $light-gray;
 	background-image: url('images/noise.png');
 	background-repeat: repeat;
 	background-position: center center;
+	border-bottom: 1px solid $dark-gray;
 }
