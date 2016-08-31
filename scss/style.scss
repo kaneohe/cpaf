@@ -5,7 +5,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -13,8 +13,10 @@ Text Domain: cpaf
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+@import 'variables';
+@import 'mixins';
 @import 'palette';
 @import '../../kaneohe/assets/scss/parent.scss';
 @import 'gallery';
-@import 'header';
-@import 'footer';
+@import 'main';

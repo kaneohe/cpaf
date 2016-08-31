@@ -1,0 +1,15 @@
+// Media Queries
+@mixin breakpoint($point) {
+  @if $point == medium {
+    @media (min-width: $medium) { @content; }
+  }
+  @elseif $point == ipad {
+    @media (min-width: $ipad) { @content; }
+  }
+  @elseif $point == large {
+    @media (min-width: $large) { @content; }
+  }
+  @elseif $point == xlarge {
+    @media (min-width: $xlarge) { @content; }
+  }    
+}

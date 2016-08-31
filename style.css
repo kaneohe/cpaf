@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -1558,16 +1558,16 @@ kbd {
       background-color: #a6cbd1;
       color: #000; }
   .button.quaternary {
-    background-color: #b62416;
+    background-color: #651c15;
     color: #fff; }
     .button.quaternary:hover, .button.quaternary:focus {
-      background-color: #911d12;
+      background-color: #511611;
       color: #fff; }
   .button.quinary {
-    background-color: #e5ebc6;
+    background-color: #c5d86e;
     color: #000; }
     .button.quinary:hover, .button.quinary:focus {
-      background-color: #c7d585;
+      background-color: #b0cb3a;
       color: #000; }
   .button.success {
     background-color: #3adb76;
@@ -1614,17 +1614,17 @@ kbd {
         border-color: #50909b;
         color: #50909b; }
     .button.hollow.quaternary {
-      border: 1px solid #b62416;
-      color: #b62416; }
+      border: 1px solid #651c15;
+      color: #651c15; }
       .button.hollow.quaternary:hover, .button.hollow.quaternary:focus {
-        border-color: #5b120b;
-        color: #5b120b; }
+        border-color: #320e0b;
+        color: #320e0b; }
     .button.hollow.quinary {
-      border: 1px solid #e5ebc6;
-      color: #e5ebc6; }
+      border: 1px solid #c5d86e;
+      color: #c5d86e; }
       .button.hollow.quinary:hover, .button.hollow.quinary:focus {
-        border-color: #8ea137;
-        color: #8ea137; }
+        border-color: #708122;
+        color: #708122; }
     .button.hollow.success {
       border: 1px solid #3adb76;
       color: #3adb76; }
@@ -2008,10 +2008,10 @@ input[type="range"] {
     background: #e4eff1;
     color: #0a0a0a; }
   .badge.quaternary {
-    background: #b62416;
+    background: #651c15;
     color: #fefefe; }
   .badge.quinary {
-    background: #e5ebc6;
+    background: #c5d86e;
     color: #0a0a0a; }
   .badge.success {
     background: #3adb76;
@@ -2126,16 +2126,16 @@ input[type="range"] {
       background-color: #a6cbd1;
       color: #000; }
   .button-group.quaternary .button {
-    background-color: #b62416;
+    background-color: #651c15;
     color: #fff; }
     .button-group.quaternary .button:hover, .button-group.quaternary .button:focus {
-      background-color: #911d12;
+      background-color: #511611;
       color: #fff; }
   .button-group.quinary .button {
-    background-color: #e5ebc6;
+    background-color: #c5d86e;
     color: #000; }
     .button-group.quinary .button:hover, .button-group.quinary .button:focus {
-      background-color: #c7d585;
+      background-color: #b0cb3a;
       color: #000; }
   .button-group.success .button {
     background-color: #3adb76;
@@ -2193,9 +2193,9 @@ input[type="range"] {
   .callout.tertiary {
     background-color: #fbfdfd; }
   .callout.quaternary {
-    background-color: #fad9d6; }
+    background-color: #f5d2cf; }
   .callout.quinary {
-    background-color: #fbfcf6; }
+    background-color: #f6f9e9; }
   .callout.success {
     background-color: #e1faea; }
   .callout.warning {
@@ -2575,10 +2575,10 @@ input[type="range"] {
     background: #e4eff1;
     color: #0a0a0a; }
   .label.quaternary {
-    background: #b62416;
+    background: #651c15;
     color: #fefefe; }
   .label.quinary {
-    background: #e5ebc6;
+    background: #c5d86e;
     color: #0a0a0a; }
   .label.success {
     background: #3adb76;
@@ -2937,9 +2937,9 @@ body {
   .progress.tertiary .progress-meter {
     background-color: #e4eff1; }
   .progress.quaternary .progress-meter {
-    background-color: #b62416; }
+    background-color: #651c15; }
   .progress.quinary .progress-meter {
-    background-color: #e5ebc6; }
+    background-color: #c5d86e; }
   .progress.success .progress-meter {
     background-color: #3adb76; }
   .progress.warning .progress-meter {
@@ -3004,17 +3004,17 @@ progress {
     progress.tertiary::-moz-progress-bar {
       background: #e4eff1; }
   progress.quaternary {
-    color: #b62416; }
+    color: #651c15; }
     progress.quaternary::-webkit-progress-value {
-      background: #b62416; }
+      background: #651c15; }
     progress.quaternary::-moz-progress-bar {
-      background: #b62416; }
+      background: #651c15; }
   progress.quinary {
-    color: #e5ebc6; }
+    color: #c5d86e; }
     progress.quinary::-webkit-progress-value {
-      background: #e5ebc6; }
+      background: #c5d86e; }
     progress.quinary::-moz-progress-bar {
-      background: #e5ebc6; }
+      background: #c5d86e; }
   progress.success {
     color: #3adb76; }
     progress.success::-webkit-progress-value {
@@ -4543,19 +4543,87 @@ header.header {
   background: #e4eff1;
   border-top: solid 1px #1a1a1a;
   padding: 20px 0; }
-  header.header div:nth-of-type(3) p > a {
+  header.header div:nth-of-type(2) > div > div p {
+    display: inline-block; }
+    @media screen and (min-width: 40em) {
+      header.header div:nth-of-type(2) > div > div p {
+        display: block; } }
+  header.header div:nth-of-type(2) > div > div p > a {
     display: inline-block;
     color: white;
     padding: 3px 0;
     width: 270px;
+    max-width: 100%;
     text-align: center;
     transition: background 0.2s ease;
     border-radius: 10px; }
-  header.header div:nth-of-type(3) p:nth-of-type(1) a {
+  header.header div:nth-of-type(2) > div > div p:nth-of-type(1) a {
     background: #e79a27; }
-    header.header div:nth-of-type(3) p:nth-of-type(1) a:hover {
+    header.header div:nth-of-type(2) > div > div p:nth-of-type(1) a:hover {
       background: #ecb055; }
-  header.header div:nth-of-type(3) p:nth-of-type(2) a {
+  header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a {
     background: #90c63f; }
-    header.header div:nth-of-type(3) p:nth-of-type(2) a:hover {
+    header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a:hover {
       background: #ecb055; }
+
+/* NAV */
+header.site-header {
+  background: #e4eff1; }
+  header.site-header .top-bar {
+    background: #e4eff1 !important; }
+    header.site-header .top-bar ul {
+      background-color: transparent !important; }
+    header.site-header .top-bar .menu {
+      margin: 15px 0; }
+      header.site-header .top-bar .menu li.home {
+        display: none; }
+      header.site-header .top-bar .menu li:not(:last-child) {
+        border-right: none !important; }
+      header.site-header .top-bar .menu a:hover:not(.button) {
+        background-color: transparent !important; }
+      header.site-header .top-bar .menu li {
+        margin: 0 30px 0 0 !important;
+        display: inline-block; }
+      header.site-header .top-bar .menu a {
+        padding: 0 !important;
+        color: #651c15 !important;
+        height: auto !important;
+        display: inline-block;
+        font-size: 18px !important;
+        line-height: 1; }
+    header.site-header .top-bar .top-bar-right {
+      float: left; }
+
+/* KANEOHE TEXT */
+section.kaneohe-text {
+  margin: 20px 0; }
+  section.kaneohe-text h2 {
+    font-size: 24px;
+    color: #A26346; }
+    @media screen and (min-width: 40em) {
+      section.kaneohe-text h2 {
+        font-size: 36px; } }
+  section.kaneohe-text img {
+    max-width: 100%; }
+  section.kaneohe-text p {
+    color: #404040; }
+
+/* KANEOHE MEDIA OBJECT */
+section.kaneohe-media-object .media-object {
+  padding: 50px;
+  background: #c5d86e;
+  background: radial-gradient(circle, #c5d86e, #90c63f); }
+  section.kaneohe-media-object .media-object img {
+    max-width: 100% !important; }
+  section.kaneohe-media-object .media-object h4 {
+    font-size: 36px;
+    color: white; }
+    @media screen and (min-width: 40em) {
+      section.kaneohe-media-object .media-object h4 {
+        font-size: 48px; } }
+  section.kaneohe-media-object .media-object p {
+    color: white;
+    font-size: 24px; }
+    @media screen and (min-width: 40em) {
+      section.kaneohe-media-object .media-object p {
+        font-size: 28px; } }

@@ -1,0 +1,162 @@
+
+
+/*-- #1 HEADER --*/
+
+header.header {
+	background: $azureish-white;
+	border-top: solid 1px lighten(black,10%);
+	padding: 20px 0;
+
+	// Right column in header
+
+
+	div:nth-of-type(2) > div > div {
+		
+		p {
+			display: inline-block;
+
+			@include breakpoint(medium) {
+				display: block;
+			}
+		}
+
+		p > a {
+			display: inline-block;
+			color: white;
+			padding: 3px 0;
+			width: 270px;
+			max-width: 100%;
+			text-align: center;
+			transition: background 0.2s ease;
+			border-radius: 10px;			
+		}
+
+		p:nth-of-type(1) a {
+			background: $marigold;
+
+			&:hover {
+				background: lighten($marigold,10%);
+			}
+		}
+
+		p:nth-of-type(2) a {
+			background: $android-green; 
+
+			&:hover {
+				background: lighten($marigold,10%);
+			}
+		}
+	}
+}
+
+/* NAV */
+
+header.site-header {
+	background: $azureish-white;
+
+	.top-bar {
+		background: $azureish-white !important;
+
+		// Foundation reset
+		ul {
+			background-color: transparent !important;
+		}
+
+		.menu {
+			//padding: 0 0 15px;
+
+			margin: 15px 0;
+			// Foundation reset
+			li.home {
+				display: none;
+			}
+
+			// Foundation reset
+			li:not(:last-child) {
+				border-right: none !important;
+			}
+
+			// Foundation reset
+			a:hover:not(.button) {
+				background-color: transparent !important;
+			}
+
+			li {
+				margin: 0 30px 0 0 !important;
+				display: inline-block;
+			}
+
+			a {
+				padding: 0 !important;
+				color: $persian-plum !important;
+				height: auto !important;
+				display: inline-block;
+				font-size: 18px !important;
+				line-height: 1;
+			}
+		}
+
+		.top-bar-right {
+			float: left;
+		}
+	}	
+}
+
+
+/* KANEOHE TEXT */
+
+section.kaneohe-text {
+
+	margin: 20px 0;
+
+	h2 {
+		font-size: 24px;
+		color: #A26346;
+
+		@include breakpoint(medium) {
+			font-size: 36px;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	p {
+		color: lighten(black,25%);
+	}
+}
+
+/* KANEOHE MEDIA OBJECT */
+
+section.kaneohe-media-object {
+
+	.media-object {
+		padding: 50px;
+		background: $medium-spring-bud;
+		background: radial-gradient(circle, $medium-spring-bud, $android-green);
+
+		img {
+			max-width: 100% !important;
+		}
+
+		h4 {
+			font-size: 36px;
+			color: white;
+
+			@include breakpoint(medium) {
+				font-size: 48px;
+			}
+		}
+
+		p {
+			color: white;
+			font-size: 24px;
+
+			@include breakpoint(medium) {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
