@@ -33,11 +33,11 @@ section.kaneohe-text {
 /* Media Object */
 
 section.kaneohe-media-object {
+	background: $medium-spring-bud;
+	background: radial-gradient(circle, $medium-spring-bud, $android-green);
 
 	.media-object {
 		padding: 50px;
-		background: $medium-spring-bud;
-		background: radial-gradient(circle, $medium-spring-bud, $android-green);
 
 		img {
 			max-width: 100% !important;

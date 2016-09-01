@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4536,9 +4536,17 @@ body#tinymce {
   background-image: url("images/noise.png");
   background-repeat: repeat;
   background-position: center center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #8a8a8a;
   border-bottom: 1px solid #8a8a8a; }
 
-/*-- #1 HEADER --*/
+/*
+
+Theme Name: CPAF
+Description: Header styles
+
+*/
 header.header {
   background: #e4eff1;
   border-top: solid 1px #1a1a1a;
@@ -4566,7 +4574,6 @@ header.header {
     header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a:hover {
       background: #ecb055; }
 
-/* NAV */
 header.site-header {
   background: #e4eff1; }
   header.site-header .top-bar {
@@ -4591,10 +4598,18 @@ header.site-header {
         display: inline-block;
         font-size: 18px !important;
         line-height: 1; }
+      header.site-header .top-bar .menu .active > a {
+        background: none; }
     header.site-header .top-bar .top-bar-right {
       float: left; }
 
-/* KANEOHE TEXT */
+/*
+
+Theme Name: CPAF
+Description: Main theme styles
+
+*/
+/* Text Object */
 section.kaneohe-text {
   margin: 20px 0; }
   section.kaneohe-text h2 {
@@ -4608,22 +4623,30 @@ section.kaneohe-text {
   section.kaneohe-text p {
     color: #404040; }
 
-/* KANEOHE MEDIA OBJECT */
-section.kaneohe-media-object .media-object {
-  padding: 50px;
+/* Media Object */
+section.kaneohe-media-object {
   background: #c5d86e;
   background: radial-gradient(circle, #c5d86e, #90c63f); }
-  section.kaneohe-media-object .media-object img {
-    max-width: 100% !important; }
-  section.kaneohe-media-object .media-object h4 {
-    font-size: 36px;
-    color: white; }
-    @media screen and (min-width: 40em) {
-      section.kaneohe-media-object .media-object h4 {
-        font-size: 48px; } }
-  section.kaneohe-media-object .media-object p {
-    color: white;
-    font-size: 24px; }
-    @media screen and (min-width: 40em) {
-      section.kaneohe-media-object .media-object p {
-        font-size: 28px; } }
+  section.kaneohe-media-object .media-object {
+    padding: 50px; }
+    section.kaneohe-media-object .media-object img {
+      max-width: 100% !important; }
+    section.kaneohe-media-object .media-object h4 {
+      font-size: 36px;
+      color: white; }
+      @media screen and (min-width: 40em) {
+        section.kaneohe-media-object .media-object h4 {
+          font-size: 48px; } }
+    section.kaneohe-media-object .media-object p {
+      color: white;
+      font-size: 24px; }
+      @media screen and (min-width: 40em) {
+        section.kaneohe-media-object .media-object p {
+          font-size: 28px; } }
+
+/*
+
+Theme Name: CPAF
+Description: Footer styles
+
+*/
