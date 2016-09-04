@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -3959,27 +3959,14 @@ body#tinymce {
 [data-whatinput="mouse"] a:focus, button:focus [data-whatinput="touch"] a:focus, button:focus {
   outline: none; }
 
-.languages {
-  background-color: #C6D96E;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  .languages #lang_sel_list {
-    height: auto; }
-    .languages #lang_sel_list ul {
-      border-top: none; }
-      .languages #lang_sel_list ul li {
-        float: left;
-        margin-right: 10px; }
-        .languages #lang_sel_list ul li a.lang_sel_other,
-        .languages #lang_sel_list ul li a:link,
-        .languages #lang_sel_list ul li a.lang_sel_other:visited {
-          font-size: 18px;
-          color: #A26346;
-          background-color: transparent; }
-        .languages #lang_sel_list ul li a.lang_sel_sel {
-          font-size: 18px;
-          color: #A26346;
-          text-decoration: underline !important; }
+.languages #lang_sel_list {
+  height: auto; }
+  .languages #lang_sel_list ul {
+    border-top: none; }
+    .languages #lang_sel_list ul li {
+      float: left; }
+      .languages #lang_sel_list ul li a.lang_sel_sel {
+        text-decoration: underline !important; }
 
 #front-hero {
   background: url("../images/demo/hero-bg-foundation-6-small.svg") bottom center;
@@ -4530,6 +4517,24 @@ body#tinymce {
     @media screen and (min-width: 40em) {
         #single-post .main-content:last-child:not(:first-child) {
           float: right; } }
+
+.languages {
+  background-color: #C6D96E;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .languages #lang_sel_list ul li {
+    margin-right: 20px; }
+    .languages #lang_sel_list ul li a.lang_sel_other,
+    .languages #lang_sel_list ul li a:link,
+    .languages #lang_sel_list ul li a.lang_sel_other:visited {
+      padding-right: 15px;
+      font-size: 14px;
+      color: #A26346;
+      background-color: transparent; }
+    .languages #lang_sel_list ul li a.lang_sel_sel {
+      font-size: 14px;
+      color: #A26346;
+      text-decoration: underline !important; }
 
 .kaneohe-gallery {
   background-color: #e6e6e6;
