@@ -5,3 +5,8 @@ Description: Footer styles
 
 */
 
+#footer-container {
+	background: $marigold;
+	background: radial-gradient(circle, $marigold, lighten($marigold, 10%));
+	color: #fff;
+}

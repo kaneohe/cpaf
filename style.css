@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4655,3 +4655,34 @@ Theme Name: CPAF
 Description: Footer styles
 
 */
+#footer-container {
+  background: #e79a27;
+  background: radial-gradient(circle, #e79a27, #ecb055);
+  color: #fff; }
+
+.widget_nav_menu {
+  margin-bottom: 20px; }
+  .widget_nav_menu h6 {
+    font-size: 1.125rem; }
+  .widget_nav_menu .menu {
+    margin: 15px 0; }
+    .widget_nav_menu .menu li.home {
+      display: none; }
+    .widget_nav_menu .menu li:not(:last-child) {
+      border-right: none !important; }
+    .widget_nav_menu .menu a:hover:not(.button) {
+      background-color: transparent !important; }
+    .widget_nav_menu .menu li {
+      margin: 0 15px 0 0 !important;
+      display: inline-block; }
+    .widget_nav_menu .menu a {
+      padding: 0 !important;
+      color: #fefefe !important;
+      height: auto !important;
+      display: inline-block;
+      font-size: 0.875rem !important;
+      line-height: 1; }
+    .widget_nav_menu .menu .active > a {
+      background: none;
+      color: #0a0a0a !important;
+      text-decoration: underline; }

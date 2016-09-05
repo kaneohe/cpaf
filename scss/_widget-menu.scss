@@ -1,0 +1,48 @@
+.widget_nav_menu {
+	
+	margin-bottom: 20px;
+	
+	h6 {
+		font-size: rem-calc(18);
+	}
+	
+	.menu {
+
+		margin: 15px 0;
+		
+		// Foundation reset
+		li.home {
+			display: none;
+		}
+
+		// Foundation reset
+		li:not(:last-child) {
+			border-right: none !important;
+		}
+
+		// Foundation reset
+		a:hover:not(.button) {
+			background-color: transparent !important;
+		}
+
+		li {
+			margin: 0 15px 0 0 !important;
+			display: inline-block;
+		}
+
+		a {
+			padding: 0 !important;
+			color: $white !important;
+			height: auto !important;
+			display: inline-block;
+			font-size: rem-calc(14) !important;
+			line-height: 1;
+		}
+		
+		.active > a {
+			background: none;
+			color: $black !important;
+			text-decoration: underline;
+		}
+	}
+}
