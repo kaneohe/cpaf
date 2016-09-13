@@ -1,7 +1,11 @@
 .languages {
-	background-color: #C6D96E;
+	background-color: $medium-spring-bud;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	
+	.title-bar {
+    	background: none;
+    }
 	
 	#lang_sel_list ul li {
 		margin-right: 20px;

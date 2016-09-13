@@ -1,0 +1,38 @@
+// Icons by Adam Fairhead http://fairheadcreative.com
+
+.widget_nav_menu .menu-social-media-container .menu a {
+	display: block;
+}
+
+#menu-social-media, 
+.menu-social-media-container .menu {
+	
+	a:hover:not(.button) {
+		background: none;
+	}
+	
+	li {
+		display: block;
+		float: left;
+		margin: 10px 5px;
+		text-indent: -9999px;
+		width: 24px;
+		height: 24px;
+		background-size: 24px;
+	}
+	
+	.facebook {
+		
+		background: url('images/webicon-facebook.svg');
+		
+	}
+	.instagram {
+		background: url('images/webicon-instagram.svg');
+	}
+	.twitter {
+		background: url('images/webicon-twitter.svg');
+	}
+	.youtube {
+		background: url('images/webicon-youtube.svg');
+	}
+}

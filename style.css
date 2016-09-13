@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4519,9 +4519,11 @@ body#tinymce {
           float: right; } }
 
 .languages {
-  background-color: #C6D96E;
+  background-color: #c5d86e;
   padding-top: 10px;
   padding-bottom: 10px; }
+  .languages .title-bar {
+    background: none; }
   .languages #lang_sel_list ul li {
     margin-right: 20px; }
     .languages #lang_sel_list ul li a.lang_sel_other,
@@ -4763,3 +4765,36 @@ Description: Footer styles
       background: none;
       color: #0a0a0a !important;
       text-decoration: underline; }
+
+.widget_nav_menu .menu-social-media-container .menu a {
+  display: block; }
+
+#menu-social-media a:hover:not(.button),
+.menu-social-media-container .menu a:hover:not(.button) {
+  background: none; }
+
+#menu-social-media li,
+.menu-social-media-container .menu li {
+  display: block;
+  float: left;
+  margin: 10px 5px;
+  text-indent: -9999px;
+  width: 24px;
+  height: 24px;
+  background-size: 24px; }
+
+#menu-social-media .facebook,
+.menu-social-media-container .menu .facebook {
+  background: url("images/webicon-facebook.svg"); }
+
+#menu-social-media .instagram,
+.menu-social-media-container .menu .instagram {
+  background: url("images/webicon-instagram.svg"); }
+
+#menu-social-media .twitter,
+.menu-social-media-container .menu .twitter {
+  background: url("images/webicon-twitter.svg"); }
+
+#menu-social-media .youtube,
+.menu-social-media-container .menu .youtube {
+  background: url("images/webicon-youtube.svg"); }
