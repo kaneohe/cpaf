@@ -9,4 +9,8 @@ Description: Footer styles
 	background: $marigold;
 	background: radial-gradient(circle, $marigold, lighten($marigold, 10%));
 	color: #fff;
+	
+	ul.menu ul {
+		display: none;
+	}
 }

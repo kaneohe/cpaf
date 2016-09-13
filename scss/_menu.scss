@@ -1,54 +1,94 @@
-header.site-header {
-	background: $azureish-white;
-
-	.top-bar {
-		background: $azureish-white !important;
-
-		// Foundation reset
-		ul {
-			background-color: transparent !important;
-		}
-
-		.menu {
-			//padding: 0 0 15px;
-
-			margin: 15px 0;
-			// Foundation reset
-			li.home {
-				display: none;
-			}
-
-			// Foundation reset
-			li:not(:last-child) {
-				border-right: none !important;
-			}
-
-			// Foundation reset
-			a:hover:not(.button) {
-				background-color: transparent !important;
-			}
-
-			li {
-				margin: 0 30px 0 0 !important;
-				display: inline-block;
-			}
-
-			a {
-				padding: 0 !important;
-				color: $persian-plum !important;
-				height: auto !important;
-				display: inline-block;
-				font-size: 18px !important;
-				line-height: 1;
-			}
-			
-			.active > a {
-				background: none;
-			}
-		}
-
-		.top-bar-right {
-			float: left;
-		}
-	}	
+.off-canvas .menu .active > a {
+	background: $marigold;   
 }
+
+header.site-header {
+	background: $marigold;
+	border-top: 1px solid darken($marigold, 10%);
+	border-bottom: 1px solid darken($marigold, 10%);
+
+	.title-bar {
+		background: $marigold;
+	}
+	
+	.title-bar-title a {
+		color: $white;	
+	}
+
+	/*.top-bar-right {
+		float: left;
+	}*/
+	
+	.top-bar .menu a {
+		
+    	color: #e6e6e6;
+    }
+    
+    .menu .active > a {
+		background: darken($marigold, 20%);   
+	}
+    
+    .top-bar .menu li:not(:last-child) {
+	    //border-right: 1px solid #4e4e4e;
+	    //border-right: 1px solid lighten($marigold, 10%);
+	    border-right: none;
+	}
+	
+	.top-bar .menu a:hover:not(.button) {
+		background: darken($marigold, 10%);
+	}
+
+	.top-bar, .top-bar ul {
+		background: $marigold;	
+	}
+	
+	.top-bar .dropdown.menu .submenu {
+	    background-color: $marigold;
+	    border: 0 none;
+	    color: $white;
+	}
+}	
+
+/*// Foundation reset
+ul {
+	background-color: transparent !important;
+}
+
+.menu {
+	//padding: 0 0 15px;
+
+	margin: 15px 0;
+	// Foundation reset
+	li.home {
+		display: none;
+	}
+
+	// Foundation reset
+	li:not(:last-child) {
+		border-right: none !important;
+	}
+
+	// Foundation reset
+	a:hover:not(.button) {
+		background-color: transparent !important;
+	}
+
+	li {
+		margin: 0 30px 0 0 !important;
+		display: inline-block;
+	}
+
+	a {
+		padding: 0 !important;
+		color: $persian-plum !important;
+		height: auto !important;
+		display: inline-block;
+		font-size: 18px !important;
+		line-height: 1;
+	}
+	
+	.active > a {
+		background: none;
+	}
+}*/
+

@@ -5,6 +5,6 @@
 	background-position: center center;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	border-top: 1px solid $dark-gray;
-	border-bottom: 1px solid $dark-gray;
+	border-top: 1px solid darken($light-gray, 10%);
+	border-bottom: 1px solid darken($light-gray, 10%);
 }

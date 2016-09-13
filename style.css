@@ -4543,8 +4543,8 @@ body#tinymce {
   background-position: center center;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #8a8a8a;
-  border-bottom: 1px solid #8a8a8a; }
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd; }
 
 /*
 
@@ -4579,35 +4579,77 @@ header.header {
     header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a:hover {
       background: #a6d166; }
 
-header.site-header {
-  background: #e4eff1; }
-  header.site-header .top-bar {
-    background: #e4eff1 !important; }
-    header.site-header .top-bar ul {
-      background-color: transparent !important; }
-    header.site-header .top-bar .menu {
-      margin: 15px 0; }
-      header.site-header .top-bar .menu li.home {
-        display: none; }
-      header.site-header .top-bar .menu li:not(:last-child) {
-        border-right: none !important; }
-      header.site-header .top-bar .menu a:hover:not(.button) {
-        background-color: transparent !important; }
-      header.site-header .top-bar .menu li {
-        margin: 0 30px 0 0 !important;
-        display: inline-block; }
-      header.site-header .top-bar .menu a {
-        padding: 0 !important;
-        color: #651c15 !important;
-        height: auto !important;
-        display: inline-block;
-        font-size: 18px !important;
-        line-height: 1; }
-      header.site-header .top-bar .menu .active > a {
-        background: none; }
-    header.site-header .top-bar .top-bar-right {
-      float: left; }
+.off-canvas .menu .active > a {
+  background: #e79a27; }
 
+header.site-header {
+  background: #e79a27;
+  border-top: 1px solid #c57f16;
+  border-bottom: 1px solid #c57f16;
+  /*.top-bar-right {
+		float: left;
+	}*/ }
+  header.site-header .title-bar {
+    background: #e79a27; }
+  header.site-header .title-bar-title a {
+    color: #fefefe; }
+  header.site-header .top-bar .menu a {
+    color: #e6e6e6; }
+  header.site-header .menu .active > a {
+    background: #976211; }
+  header.site-header .top-bar .menu li:not(:last-child) {
+    border-right: none; }
+  header.site-header .top-bar .menu a:hover:not(.button) {
+    background: #c57f16; }
+  header.site-header .top-bar, header.site-header .top-bar ul {
+    background: #e79a27; }
+  header.site-header .top-bar .dropdown.menu .submenu {
+    background-color: #e79a27;
+    border: 0 none;
+    color: #fefefe; }
+
+/*// Foundation reset
+ul {
+	background-color: transparent !important;
+}
+
+.menu {
+	//padding: 0 0 15px;
+
+	margin: 15px 0;
+	// Foundation reset
+	li.home {
+		display: none;
+	}
+
+	// Foundation reset
+	li:not(:last-child) {
+		border-right: none !important;
+	}
+
+	// Foundation reset
+	a:hover:not(.button) {
+		background-color: transparent !important;
+	}
+
+	li {
+		margin: 0 30px 0 0 !important;
+		display: inline-block;
+	}
+
+	a {
+		padding: 0 !important;
+		color: $persian-plum !important;
+		height: auto !important;
+		display: inline-block;
+		font-size: 18px !important;
+		line-height: 1;
+	}
+	
+	.active > a {
+		background: none;
+	}
+}*/
 /*
 
 Theme Name: CPAF
@@ -4692,6 +4734,8 @@ Description: Footer styles
   background: #e79a27;
   background: radial-gradient(circle, #e79a27, #ecb055);
   color: #fff; }
+  #footer-container ul.menu ul {
+    display: none; }
 
 .widget_nav_menu {
   margin-bottom: 20px; }
