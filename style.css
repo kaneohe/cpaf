@@ -431,7 +431,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1266,7 +1266,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -4577,7 +4577,7 @@ header.header {
   header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a {
     background: #90c63f; }
     header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a:hover {
-      background: #ecb055; }
+      background: #a6d166; }
 
 header.site-header {
   background: #e4eff1; }
@@ -4615,18 +4615,51 @@ Description: Main theme styles
 
 */
 /* Text Object */
+body {
+  font-family: 'Open Sans', sans-serif !important; }
+  body h1 {
+    font-size: 24px;
+    color: #90c63f; }
+    @media screen and (min-width: 40em) {
+      body h1 {
+        font-size: 36px; } }
+  body h2 {
+    font-size: 20px;
+    color: #651c15; }
+    @media screen and (min-width: 40em) {
+      body h2 {
+        font-size: 30px; } }
+  body h3 {
+    font-size: 19px;
+    color: #e79a27; }
+    @media screen and (min-width: 40em) {
+      body h3 {
+        font-size: 27px; } }
+  body h4 {
+    font-size: 18px;
+    color: #c5d86e; }
+    @media screen and (min-width: 40em) {
+      body h4 {
+        font-size: 21px; } }
+  body h5 {
+    font-size: 17px;
+    color: #262626; }
+    @media screen and (min-width: 40em) {
+      body h5 {
+        font-size: 19px; } }
+  body h6 {
+    font-size: 16px;
+    color: #333333; }
+    @media screen and (min-width: 40em) {
+      body h6 {
+        font-size: 16px; } }
+  body img {
+    max-width: 100%; }
+  body p {
+    color: #404040; }
+
 section.kaneohe-text {
   margin: 20px 0; }
-  section.kaneohe-text h2 {
-    font-size: 24px;
-    color: #A26346; }
-    @media screen and (min-width: 40em) {
-      section.kaneohe-text h2 {
-        font-size: 36px; } }
-  section.kaneohe-text img {
-    max-width: 100%; }
-  section.kaneohe-text p {
-    color: #404040; }
 
 /* Media Object */
 section.kaneohe-media-object {
@@ -4637,17 +4670,17 @@ section.kaneohe-media-object {
     section.kaneohe-media-object .media-object img {
       max-width: 100% !important; }
     section.kaneohe-media-object .media-object h4 {
-      font-size: 36px;
+      font-size: 20pxpx;
       color: white; }
       @media screen and (min-width: 40em) {
         section.kaneohe-media-object .media-object h4 {
-          font-size: 48px; } }
+          font-size: 30px; } }
     section.kaneohe-media-object .media-object p {
       color: white;
-      font-size: 24px; }
+      font-size: 18px; }
       @media screen and (min-width: 40em) {
         section.kaneohe-media-object .media-object p {
-          font-size: 28px; } }
+          font-size: 22px; } }
 
 /*
 

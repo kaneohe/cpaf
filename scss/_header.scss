@@ -44,7 +44,7 @@ header.header {
 			background: $android-green; 
 
 			&:hover {
-				background: lighten($marigold,10%);
+				background: lighten($android-green,10%);
 			}
 		}
 	}

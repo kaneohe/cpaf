@@ -1,1 +1,21 @@
 $medium: 640px;
+$header-sizes: (
+  small: (
+    'h1': 24,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+  medium: (
+    'h1': 36,
+    'h2': 30,
+    'h3': 27,
+    'h4': 21,
+    'h5': 19,
+    'h6': 16,
+  ),
+);
+
+$body-font-family: 'Open Sans', sans-serif;

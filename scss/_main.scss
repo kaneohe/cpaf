@@ -8,16 +8,60 @@ Description: Main theme styles
 
 /* Text Object */
 
-section.kaneohe-text {
-
-	margin: 20px 0;
-
-	h2 {
+body {
+	font-family: 'Open Sans', sans-serif !important;
+	
+	h1 {
 		font-size: 24px;
-		color: #A26346;
-
+		color: $android-green;
+		
 		@include breakpoint(medium) {
 			font-size: 36px;
+		}
+	}
+
+	h2 {
+		font-size: 20px;
+		color: $persian-plum;
+
+		@include breakpoint(medium) {
+			font-size: 30px;
+		}
+	}
+	
+	h3 {
+		font-size: 19px;
+		color: $marigold;
+		
+		@include breakpoint(medium) {
+			font-size: 27px;
+		}
+	}
+	
+	h4 {
+		font-size: 18px;
+		color: $medium-spring-bud;
+		
+		@include breakpoint(medium) {
+			font-size: 21px;
+		}
+	}
+	
+	h5 {
+		font-size: 17px;
+		color: lighten(black,15%);
+		
+		@include breakpoint(medium) {
+			font-size: 19px;
+		}
+	}
+	
+	h6 {
+		font-size: 16px;
+		color: lighten(black,20%);
+		
+		@include breakpoint(medium) {
+			font-size: 16px;
 		}
 	}
 
@@ -28,6 +72,12 @@ section.kaneohe-text {
 	p {
 		color: lighten(black,25%);
 	}
+}
+
+section.kaneohe-text {
+
+	margin: 20px 0;
+	
 }
 
 /* Media Object */
@@ -44,20 +94,20 @@ section.kaneohe-media-object {
 		}
 
 		h4 {
-			font-size: 36px;
+			font-size: 20pxpx;
 			color: white;
 
 			@include breakpoint(medium) {
-				font-size: 48px;
+				font-size: 30px;
 			}
 		}
 
 		p {
 			color: white;
-			font-size: 24px;
+			font-size: 18px;
 
 			@include breakpoint(medium) {
-				font-size: 28px;
+				font-size: 22px;
 			}
 		}
 	}
