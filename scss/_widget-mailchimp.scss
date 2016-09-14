@@ -1,0 +1,26 @@
+.sidebar .widget_mc4wp_form_widget {
+	background: $android-green;
+	background: radial-gradient(ellipse at center, $medium-spring-bud 0%, $android-green 100%);
+	border: 1px solid darken($android-green, 20%);
+	padding: 10px;
+	
+	h6 {
+		color: $white;
+		font-size: 26px;
+		padding-left: 15px;
+	}
+	
+	p {
+		color: $white;
+		font-size: 18px;
+	}
+	
+	label {
+		color: $white;
+		font-size: 14px;
+	}
+	
+	.button {
+		background-color: $marigold;
+	}
+}

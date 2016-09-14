@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.8
+Version: 1.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4714,7 +4714,7 @@ section.kaneohe-media-object {
     section.kaneohe-media-object .media-object img {
       max-width: 100% !important; }
     section.kaneohe-media-object .media-object h4 {
-      font-size: 20pxpx;
+      font-size: 20px;
       color: white; }
       @media screen and (min-width: 40em) {
         section.kaneohe-media-object .media-object h4 {
@@ -4765,6 +4765,24 @@ Description: Footer styles
       background: none;
       color: #0a0a0a !important;
       text-decoration: underline; }
+
+.sidebar .widget_mc4wp_form_widget {
+  background: #90c63f;
+  background: radial-gradient(ellipse at center, #c5d86e 0%, #90c63f 100%);
+  border: 1px solid #587a24;
+  padding: 10px; }
+  .sidebar .widget_mc4wp_form_widget h6 {
+    color: #fefefe;
+    font-size: 26px;
+    padding-left: 15px; }
+  .sidebar .widget_mc4wp_form_widget p {
+    color: #fefefe;
+    font-size: 18px; }
+  .sidebar .widget_mc4wp_form_widget label {
+    color: #fefefe;
+    font-size: 14px; }
+  .sidebar .widget_mc4wp_form_widget .button {
+    background-color: #e79a27; }
 
 .widget_nav_menu .menu-social-media-container .menu a {
   display: block; }
