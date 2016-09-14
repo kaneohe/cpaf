@@ -10,42 +10,56 @@ header.header {
 	border-top: solid 1px lighten(black,10%);
 	padding: 20px 0;
 
-	// Right column in header
-	div:nth-of-type(2) > div > div {
+
 		
-		p {
-			display: inline-block;
+	.orange-button {
+		display: inline-block;
+		width: 100%;
 
-			@include breakpoint(medium) {
-				display: block;
-			}
-		}
-
-		p > a {
-			display: inline-block;
-			color: white;
-			padding: 3px 0;
-			width: 270px;
-			max-width: 100%;
-			text-align: center;
-			transition: background 0.2s ease;
-			border-radius: 10px;			
-		}
-
-		p:nth-of-type(1) a {
+		a {
 			background: $marigold;
+			display: block;
+			text-align: center;
+			border-radius: 5px;
+			padding: 5px 10px;
+			transition: all 0.2s ease;
+			font-size: 14px;
+			color: white;
+			width: 100%;
 
-			&:hover {
-				background: lighten($marigold,10%);
-			}
+			strong {
+				font-size: 18px;
+			}			
 		}
 
-		p:nth-of-type(2) a {
-			background: $android-green; 
-
-			&:hover {
-				background: lighten($android-green,10%);
-			}
+		a:hover {
+			background: lighten($marigold, 10%);
 		}
 	}
+
+	.green-button {
+		display: inline-block;
+		width: 100%;
+
+		a {
+			background: $android-green;
+			display: inline-block;
+			text-align: center;
+			border-radius: 5px;
+			padding: 3px 5px;
+			transition: all 0.2s ease;	
+			font-size: 14px;
+			color: white;
+			width: 100%;
+
+			strong {
+				font-size: 18px;
+			}			
+		}
+
+		a:hover {
+			background: lighten($android-green, 10%);
+		}
+	}	
+		
 }

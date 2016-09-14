@@ -1,0 +1,25 @@
+.orange-button {
+	display: block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: hsla(36, 80%, 53%, 1);
+	color: white;
+	font-weight: 700;
+}
+
+.orange-button a {
+	color: white;
+}
+
+.green-button {
+	display: block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: hsla(84, 54%, 51%, 1);
+	color: white;
+	font-weight: 700;
+}
+
+.green-button a {
+	color: white;
+}

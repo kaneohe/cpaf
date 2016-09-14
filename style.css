@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.10
+Version: 1.0.11
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -3830,6 +3830,9 @@ li.is-dropdown-submenu-parent >
 a::after {
   display: none; }
 
+.top-bar .dropdown.menu.is-dropdown-submenu {
+  min-width: 300px !important; }
+
 /* Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix" https://css-tricks.com/snippets/css/clear-fix/ */
 .post-navigation:before,
 .post-navigation:after {
@@ -4560,27 +4563,39 @@ header.header {
   background: #e4eff1;
   border-top: solid 1px #1a1a1a;
   padding: 20px 0; }
-  header.header div:nth-of-type(2) > div > div p {
-    display: inline-block; }
-    @media screen and (min-width: 40em) {
-      header.header div:nth-of-type(2) > div > div p {
-        display: block; } }
-  header.header div:nth-of-type(2) > div > div p > a {
+  header.header .orange-button {
     display: inline-block;
-    color: white;
-    padding: 3px 0;
-    width: 270px;
-    max-width: 100%;
-    text-align: center;
-    transition: background 0.2s ease;
-    border-radius: 10px; }
-  header.header div:nth-of-type(2) > div > div p:nth-of-type(1) a {
-    background: #e79a27; }
-    header.header div:nth-of-type(2) > div > div p:nth-of-type(1) a:hover {
+    width: 100%; }
+    header.header .orange-button a {
+      background: #e79a27;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px 10px;
+      transition: all 0.2s ease;
+      font-size: 14px;
+      color: white;
+      width: 100%; }
+      header.header .orange-button a strong {
+        font-size: 18px; }
+    header.header .orange-button a:hover {
       background: #ecb055; }
-  header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a {
-    background: #90c63f; }
-    header.header div:nth-of-type(2) > div > div p:nth-of-type(2) a:hover {
+  header.header .green-button {
+    display: inline-block;
+    width: 100%; }
+    header.header .green-button a {
+      background: #90c63f;
+      display: inline-block;
+      text-align: center;
+      border-radius: 5px;
+      padding: 3px 5px;
+      transition: all 0.2s ease;
+      font-size: 14px;
+      color: white;
+      width: 100%; }
+      header.header .green-button a strong {
+        font-size: 18px; }
+    header.header .green-button a:hover {
       background: #a6d166; }
 
 .off-canvas .menu .active > a {
