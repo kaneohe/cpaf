@@ -4547,6 +4547,8 @@ body#tinymce {
   padding-bottom: 20px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd; }
+  .kaneohe-gallery .slick-dots {
+    bottom: -45px; }
 
 /*
 
