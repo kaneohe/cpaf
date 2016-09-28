@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.12
+Version: 1.0.13
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4579,41 +4579,39 @@ Description: Header styles
 header.header {
   background: #e4eff1;
   border-top: solid 1px #1a1a1a;
-  padding: 20px 0; }
-  header.header .orange-button {
+  padding: 20px 0 0 0; }
+  header.header a.button.primary {
     display: inline-block;
+    width: 100%;
+    background: #e79a27;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    color: white;
     width: 100%; }
-    header.header .orange-button a {
-      background: #e79a27;
-      display: block;
-      text-align: center;
-      border-radius: 5px;
-      padding: 5px 10px;
-      transition: all 0.2s ease;
-      font-size: 14px;
-      color: white;
-      width: 100%; }
-      header.header .orange-button a strong {
-        font-size: 18px; }
-    header.header .orange-button a:hover {
-      background: #ecb055; }
-  header.header .green-button {
+    header.header a.button.primary strong {
+      font-size: 18px; }
+  header.header a.button.primary:hover {
+    background: #ecb055; }
+  header.header a.button.primary:nth-of-type(2) {
     display: inline-block;
+    width: 100%;
+    background: #90c63f;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px 5px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    color: white;
     width: 100%; }
-    header.header .green-button a {
-      background: #90c63f;
-      display: inline-block;
-      text-align: center;
-      border-radius: 5px;
-      padding: 3px 5px;
-      transition: all 0.2s ease;
-      font-size: 14px;
-      color: white;
-      width: 100%; }
-      header.header .green-button a strong {
-        font-size: 18px; }
-    header.header .green-button a:hover {
-      background: #a6d166; }
+    header.header a.button.primary:nth-of-type(2) strong {
+      font-size: 18px; }
+  header.header a.button.primary:nth-of-type(2):hover {
+    background: #a6d166; }
 
 .off-canvas .menu .active > a {
   background: #e79a27; }
@@ -4759,6 +4757,9 @@ section.kaneohe-media-object {
       @media screen and (min-width: 40em) {
         section.kaneohe-media-object .media-object p {
           font-size: 22px; } }
+
+body.home .breadcrumbs {
+  display: none; }
 
 /*
 

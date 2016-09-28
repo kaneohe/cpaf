@@ -10,11 +10,11 @@ Description: Main theme styles
 
 body {
 	font-family: 'Open Sans', sans-serif !important;
-	
+
 	h1 {
 		font-size: 24px;
 		color: $android-green;
-		
+
 		@include breakpoint(medium) {
 			font-size: 36px;
 		}
@@ -28,38 +28,38 @@ body {
 			font-size: 30px;
 		}
 	}
-	
+
 	h3 {
 		font-size: 19px;
 		color: $marigold;
-		
+
 		@include breakpoint(medium) {
 			font-size: 27px;
 		}
 	}
-	
+
 	h4 {
 		font-size: 18px;
 		color: $medium-spring-bud;
-		
+
 		@include breakpoint(medium) {
 			font-size: 21px;
 		}
 	}
-	
+
 	h5 {
 		font-size: 17px;
 		color: lighten(black,15%);
-		
+
 		@include breakpoint(medium) {
 			font-size: 19px;
 		}
 	}
-	
+
 	h6 {
 		font-size: 16px;
 		color: lighten(black,20%);
-		
+
 		@include breakpoint(medium) {
 			font-size: 16px;
 		}
@@ -77,7 +77,7 @@ body {
 section.kaneohe-text {
 
 	margin: 20px 0;
-	
+
 }
 
 /* Media Object */
@@ -111,4 +111,8 @@ section.kaneohe-media-object {
 			}
 		}
 	}
+}
+
+body.home .breadcrumbs {
+	display: none;
 }

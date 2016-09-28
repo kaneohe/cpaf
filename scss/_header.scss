@@ -8,15 +8,16 @@ Description: Header styles
 header.header {
 	background: $azureish-white;
 	border-top: solid 1px lighten(black,10%);
-	padding: 20px 0;
+	padding: 20px 0 0 0;
 
 
-		
-	.orange-button {
-		display: inline-block;
-		width: 100%;
 
-		a {
+	//.orange-button {
+
+
+		a.button.primary {
+			display: inline-block;
+			width: 100%;
 			background: $marigold;
 			display: block;
 			text-align: center;
@@ -29,37 +30,38 @@ header.header {
 
 			strong {
 				font-size: 18px;
-			}			
+			}
 		}
 
-		a:hover {
+		a.button.primary:hover {
 			background: lighten($marigold, 10%);
 		}
-	}
+	//}
 
-	.green-button {
-		display: inline-block;
-		width: 100%;
+	//.green-button {
 
-		a {
+
+		a.button.primary:nth-of-type(2) {
+			display: inline-block;
+			width: 100%;
 			background: $android-green;
 			display: inline-block;
 			text-align: center;
 			border-radius: 5px;
 			padding: 3px 5px;
-			transition: all 0.2s ease;	
+			transition: all 0.2s ease;
 			font-size: 14px;
 			color: white;
 			width: 100%;
 
 			strong {
 				font-size: 18px;
-			}			
+			}
 		}
 
-		a:hover {
+		a.button.primary:nth-of-type(2):hover {
 			background: lighten($android-green, 10%);
 		}
-	}	
-		
+	//}
+
 }
