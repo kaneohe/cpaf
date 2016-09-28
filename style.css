@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.11
+Version: 1.0.12
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -59,6 +59,23 @@ p.wp-caption-text {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto; }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
