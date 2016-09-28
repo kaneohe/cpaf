@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.14
+Version: 1.0.15
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4780,7 +4780,8 @@ Description: Footer styles
 .widget_nav_menu {
   margin-bottom: 20px; }
   .widget_nav_menu h6 {
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+    color: #fefefe; }
   .widget_nav_menu .menu {
     margin: 15px 0; }
     .widget_nav_menu .menu li.home {
@@ -4801,7 +4802,7 @@ Description: Footer styles
       line-height: 1; }
     .widget_nav_menu .menu .active > a {
       background: none;
-      color: #0a0a0a !important;
+      color: #fefefe !important;
       text-decoration: underline; }
 
 .sidebar .widget_mc4wp_form_widget {

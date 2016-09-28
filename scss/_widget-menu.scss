@@ -1,15 +1,16 @@
 .widget_nav_menu {
-	
+
 	margin-bottom: 20px;
-	
+
 	h6 {
 		font-size: rem-calc(18);
+		color: $white;
 	}
-	
+
 	.menu {
 
 		margin: 15px 0;
-		
+
 		// Foundation reset
 		li.home {
 			display: none;
@@ -38,10 +39,10 @@
 			font-size: rem-calc(14) !important;
 			line-height: 1;
 		}
-		
+
 		.active > a {
 			background: none;
-			color: $black !important;
+			color: $white !important;
 			text-decoration: underline;
 		}
 	}
