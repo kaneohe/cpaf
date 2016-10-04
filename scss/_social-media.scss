@@ -4,13 +4,15 @@
 	display: block;
 }
 
-#menu-social-media, 
-.menu-social-media-container .menu {
-	
+#menu-social-media,
+*[id^="menu-social-media-"],
+.menu-social-media-container .menu,
+*[class^="menu-social-media-"] .menu {
+
 	a:hover:not(.button) {
 		background: none;
 	}
-	
+
 	li {
 		display: block;
 		float: left;
@@ -20,11 +22,11 @@
 		height: 24px;
 		background-size: 24px;
 	}
-	
+
 	.facebook {
-		
+
 		background: url('images/webicon-facebook.svg');
-		
+
 	}
 	.instagram {
 		background: url('images/webicon-instagram.svg');

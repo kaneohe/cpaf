@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.15
+Version: 1.0.16
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4827,11 +4827,15 @@ Description: Footer styles
   display: block; }
 
 #menu-social-media a:hover:not(.button),
-.menu-social-media-container .menu a:hover:not(.button) {
+*[id^="menu-social-media-"] a:hover:not(.button),
+.menu-social-media-container .menu a:hover:not(.button),
+*[class^="menu-social-media-"] .menu a:hover:not(.button) {
   background: none; }
 
 #menu-social-media li,
-.menu-social-media-container .menu li {
+*[id^="menu-social-media-"] li,
+.menu-social-media-container .menu li,
+*[class^="menu-social-media-"] .menu li {
   display: block;
   float: left;
   margin: 10px 5px;
@@ -4841,17 +4845,25 @@ Description: Footer styles
   background-size: 24px; }
 
 #menu-social-media .facebook,
-.menu-social-media-container .menu .facebook {
+*[id^="menu-social-media-"] .facebook,
+.menu-social-media-container .menu .facebook,
+*[class^="menu-social-media-"] .menu .facebook {
   background: url("images/webicon-facebook.svg"); }
 
 #menu-social-media .instagram,
-.menu-social-media-container .menu .instagram {
+*[id^="menu-social-media-"] .instagram,
+.menu-social-media-container .menu .instagram,
+*[class^="menu-social-media-"] .menu .instagram {
   background: url("images/webicon-instagram.svg"); }
 
 #menu-social-media .twitter,
-.menu-social-media-container .menu .twitter {
+*[id^="menu-social-media-"] .twitter,
+.menu-social-media-container .menu .twitter,
+*[class^="menu-social-media-"] .menu .twitter {
   background: url("images/webicon-twitter.svg"); }
 
 #menu-social-media .youtube,
-.menu-social-media-container .menu .youtube {
+*[id^="menu-social-media-"] .youtube,
+.menu-social-media-container .menu .youtube,
+*[class^="menu-social-media-"] .menu .youtube {
   background: url("images/webicon-youtube.svg"); }
