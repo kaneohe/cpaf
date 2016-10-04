@@ -1,6 +1,7 @@
 // Icons by Adam Fairhead http://fairheadcreative.com
 
-.widget_nav_menu .menu-social-media-container .menu a {
+.widget_nav_menu .menu-social-media-container .menu a,
+.widget_nav_menu *[class^="menu-social-media-"] .menu a {
 	display: block;
 }
 
@@ -10,7 +11,7 @@
 *[class^="menu-social-media-"] .menu {
 
 	a:hover:not(.button) {
-		background: none;
+		background: none !important;
 	}
 
 	li {
@@ -24,9 +25,7 @@
 	}
 
 	.facebook {
-
 		background: url('images/webicon-facebook.svg');
-
 	}
 	.instagram {
 		background: url('images/webicon-instagram.svg');

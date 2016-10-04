@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.16
+Version: 1.0.17
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4823,14 +4823,15 @@ Description: Footer styles
   .sidebar .widget_mc4wp_form_widget .button {
     background-color: #e79a27; }
 
-.widget_nav_menu .menu-social-media-container .menu a {
+.widget_nav_menu .menu-social-media-container .menu a,
+.widget_nav_menu *[class^="menu-social-media-"] .menu a {
   display: block; }
 
 #menu-social-media a:hover:not(.button),
 *[id^="menu-social-media-"] a:hover:not(.button),
 .menu-social-media-container .menu a:hover:not(.button),
 *[class^="menu-social-media-"] .menu a:hover:not(.button) {
-  background: none; }
+  background: none !important; }
 
 #menu-social-media li,
 *[id^="menu-social-media-"] li,
