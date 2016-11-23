@@ -6,7 +6,7 @@ Description: Kaneohe child theme
 Author: Jeremy Moseley, Brian Gunzenhauser
 Author URI: http://github.org/kaneohe
 Template: kaneohe
-Version: 1.0.18
+Version: 1.0.19
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cpaf
@@ -4868,3 +4868,11 @@ Description: Footer styles
 .menu-social-media-container .menu .youtube,
 *[class^="menu-social-media-"] .menu .youtube {
   background: url("images/webicon-youtube.svg"); }
+
+.wp-caption.aligncenter > figcaption {
+  text-align: center; }
+
+.wp-caption.aligncenter > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
